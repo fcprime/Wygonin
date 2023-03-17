@@ -1,0 +1,102 @@
+html {
+  box-sizing: border-box;
+}
+
+*,
+*::after,
+*::before {
+  box-sizing: inherit;
+}
+
+ul[class],
+ol[class] {
+  padding: 0;
+}
+body,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p,
+ul[class],
+ol[class],
+li,
+figure,
+figcaption,
+blockquote,
+dl,
+dd {
+  margin: 0;
+}
+
+ul[class] {
+  list-style: none;
+}
+
+.box {
+  max-width: 550px;
+  width: 100%;
+  background-color: #ece9d8;
+  margin: 100px auto;
+}
+
+.items {
+  padding: 40px;
+  width: 100%;
+}
+
+.list {
+  display: flex;
+  align-items: center;
+  background-color: #fff;
+  max-width: 470px;
+}
+
+.list__one {
+  background-color: #ece9d8;
+  display: flex;
+  align-items: center;
+}
+
+.list__item {
+  border: 1px solid gold;
+  font-size: 14px;
+}
+
+.list__item-data {
+  max-width: 80px;
+  width: 100%;
+}
+
+.list__item-name,
+.list__item-qty,
+.list__item-price,
+.list__item-data {
+  height: 50px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+}
+
+.list__item-title {
+  font-size: 16px !important;
+}
+
+.list__item-name,
+.list__item-qty,
+.list__item-price {
+  max-width: 110px;
+  width: 100%;
+}
+
+@media (max-width: 650px) {
+  .box {
+    min-width: 550px;
+  }
+  .items {
+    overflow-x: scroll;
+  }
+}
